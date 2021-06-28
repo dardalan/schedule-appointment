@@ -1,0 +1,65 @@
+@value button-primary from 'schedule-appointment/styles/colors';
+
+.location-item {
+  border: 1px solid #dadfe6;
+  border-radius: 4px;
+  background-color: #fff;
+  display: flex;
+  margin: 0 10px 20px;
+  flex-direction: column;
+}
+
+.map {
+  width: 260px;
+  height: 170px;
+  background: url(https://widget-cdn.simplepractice.com/assets/images/video-office-wide-694d661cd74e6814382504a66bf2f427.png) center center no-repeat;
+  border-bottom: 1px solid #dbdfe5;
+  background-size: contain;
+}
+
+.body {
+  display: flex;
+  flex-grow: 1;
+}
+
+.body-content {
+  flex: 1 0 100%;
+  line-height: 22px;
+  padding: 20px 30px 30px;
+}
+
+.text {
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.name {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 6px;
+}
+
+.phone {
+
+}
+
+.button {
+  display: inline-flex;
+  padding: 0 17px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: button-primary;
+  border: none;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  transition: opacity .17s ease-in-out;
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+.button.primary {
+  background-color: button-primary;
+}

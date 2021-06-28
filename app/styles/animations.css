@@ -1,0 +1,9 @@
+@keyframes shine {
+  from {
+    background-position: -60px;
+  }
+
+  to {
+    background-position: 320px;
+  }
+}

@@ -1,0 +1,9 @@
+.reservation-wrapper {
+  margin: 30px auto auto;
+  width: 1000px;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  box-shadow: 0 1px 7px 0 rgb(116 135 162 / 14%), 1px 1px 4px 0 rgb(190 198 207 / 24%);
+}

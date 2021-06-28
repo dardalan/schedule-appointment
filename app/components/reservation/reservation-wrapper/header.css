@@ -1,0 +1,22 @@
+@value border-color, secondary-color from 'schedule-appointment/styles/colors';
+
+.header {
+  position: relative;
+  height: 63px;
+  width: 100%;
+  line-height: 61px;
+  border-bottom: 1px solid border-color;
+  padding: 0 25px;
+}
+
+.subtitle {
+  width: 33%;
+  color: secondary-color;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+}

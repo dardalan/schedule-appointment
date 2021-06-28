@@ -24,6 +24,7 @@ module.exports = function (environment) {
   };
 
   if (environment === 'development') {
+    ENV.apiHost = 'https://johnny-appleseed.clientsecure.me';
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
@@ -46,6 +47,11 @@ module.exports = function (environment) {
   if (environment === 'production') {
     // here you can enable a production-specific feature
   }
+
+  ENV.contentSecurityPolicy = {
+  // ... other stuff here
+  'connect-src': "'self' https://johnny-appleseed.clientsecure.me"
+}
 
   return ENV;
 };

@@ -1,0 +1,11 @@
+a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.link-text {
+  font-weight: 400;
+  color: #333;
+}

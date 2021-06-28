@@ -1,0 +1,30 @@
+@value primary-color from 'schedule-appointment/styles/colors';
+
+.index {
+  color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  line-height: 20px;
+  margin-right: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  background: primary-color;
+}
+
+.link-text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.completed {
+  text-decoration: none;
+}

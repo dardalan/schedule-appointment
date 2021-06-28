@@ -1,0 +1,9 @@
+<div local-class="service-item">
+  <div local-class="info">
+    <div local-class="title">{{@service.description}}</div>
+    <div local-class="details">{{@service.duration}}</div>
+  </div>
+  <button local-class="button primary" class="align-self-center" onclick={{action @nextStep 'cptCodeId' @service.id 'location'}}>
+    Select
+  </button>
+</div>

@@ -1,0 +1,26 @@
+{{page-title "Widget"}}
+
+<Reservation::ReservationWrapper @steps={{this.steps}} @model={{this.model}} as |steps currentStep|>
+  <Reservation::Steps>
+    {{#each steps as |step idx|}}
+      <Reservation::Steps::StepLink
+        @index={{add idx 1}}
+        @route={{concat "widget." step.route}}
+        @title={{step.title}}
+        @completedTitle={{step.completedTitle}}
+        @isEnabled={{gte currentStep.id step.id}}
+        @isCompleted={{gt currentStep.id step.id}} />
+    {{/each}}
+
+  </Reservation::Steps>
+
+  <Reservation::ReservationWrapper::Content>
+    {{#if this.isLoading}}
+      {{component (concat 'reservation/skeletons/loading-' this.loadingTitle)}}
+
+      Loading Data for {{this.loadingTitle}} ...
+    {{else}}
+      {{outlet}}
+    {{/if}}
+  </Reservation::ReservationWrapper::Content>
+</Reservation::ReservationWrapper>

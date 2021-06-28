@@ -1,0 +1,45 @@
+@value button-primary from 'schedule-appointment/styles/colors';
+
+.service-item {
+  border: 1px solid #dadfe6;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 725px;
+  margin: 0 auto 20px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  width: 70%;
+}
+
+.title {
+  font-size: 17px;
+}
+
+.details {
+  font-size: 14px;
+  color: #6d7376;
+}
+
+.button {
+  display: inline-flex;
+  padding: 0 17px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: button-primary;
+  border: none;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  transition: opacity .17s ease-in-out;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.button.primary {
+  background-color: button-primary;
+}

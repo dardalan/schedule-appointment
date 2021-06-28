@@ -1,0 +1,24 @@
+<div local-class="location-item">
+  <div local-class="map">
+  </div>
+  <div local-class="body">
+    <div local-class="body-content">
+      <div local-class="text">
+        <div local-class="name">
+          {{@location.name}}
+        </div>
+
+        <div local-class="phone">
+          {{@location.phone}}
+        </div>
+      </div>
+
+      <button
+        onclick={{action @nextStep 'cptCodeId' @service.id 'location'}}
+        local-class="button primary"
+        class="align-self-start">
+        Select
+      </button>
+    </div>
+  </div>
+</div>

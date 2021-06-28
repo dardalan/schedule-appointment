@@ -1,0 +1,11 @@
+{{page-title "Service"}}
+
+<div class="container">
+  <div class="row">
+    {{#each this.model as |service|}}
+      <Reservation::ServiceItem
+        @service={{service}}
+        @nextStep={{action (route-action 'nextStep')}}/>
+    {{/each}}
+  </div>
+</div>

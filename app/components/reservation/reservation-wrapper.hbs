@@ -1,0 +1,7 @@
+<div local-class="reservation-wrapper" class="d-flex flex-wrap">
+  <Reservation::ReservationWrapper::Header />
+
+  <Reservation::ReservationWrapper::Body>
+    {{yield @steps this.currentStep}}
+  </Reservation::ReservationWrapper::Body>
+</div>

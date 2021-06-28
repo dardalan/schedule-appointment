@@ -1,0 +1,19 @@
+<div local-class="step-link {{unless @isEnabled 'disabled'}} {{if @isCompleted 'completed'}}">
+  <LinkTo @route={{@route}}>
+    <span local-class="title">
+      <span local-class="index">
+        {{#if @isCompleted}}
+          <span>&#10003;</span>
+        {{else}}
+          {{@index}}
+        {{/if}}
+      </span>
+
+      {{#if @isCompleted}}
+        {{@completedTitle}}
+      {{else}}
+        <span local-class="link-text">{{@title}}</span>
+      {{/if}}
+    </span>
+  </LinkTo>
+</div>
