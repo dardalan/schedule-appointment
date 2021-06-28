@@ -8,7 +8,6 @@ export default class ClinicianManagerService extends Service {
 
   modelName = 'clinician';
 
-  // TODO:
   getClinician() {
     return this.store.peekRecord(this.modelName, DUMMY_CLINICIAN_ID)
       || this.store.findRecord(this.modelName, DUMMY_CLINICIAN_ID);

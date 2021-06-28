@@ -1,6 +1,6 @@
 {{page-title "Widget"}}
 
-<Reservation::ReservationWrapper @steps={{this.steps}} @model={{this.model}} as |steps currentStep|>
+<Reservation::ReservationWrapper @steps={{this.steps}} @clinician={{this.model.clinician}} as |steps currentStep|>
   <Reservation::Steps>
     {{#each steps as |step idx|}}
       <Reservation::Steps::StepLink

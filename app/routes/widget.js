@@ -32,10 +32,15 @@ export default class WidgetRoute extends Route {
     );
   }
 
+  beforeModel() {
+    // Let's assume for now that we have clinician always present for current user
+    this.transitionTo('widget.clinician');
+  }
+
   model() {
     // TODO: Add Parent Model
     return EmberObject.create({
-      clinicianId: this.clinicianManager.getClinicianId(),
+      clinician: null,
       cptCodeId: null,
       locationId: null,
     });

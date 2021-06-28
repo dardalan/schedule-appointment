@@ -10,5 +10,6 @@ Router.map(function () {
   this.route('widget', function() {
     this.route('service');
     this.route('location');
+    this.route('clinician');
   });
 });

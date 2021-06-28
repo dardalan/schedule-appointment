@@ -10,7 +10,7 @@ export default class WidgetServiceRoute extends Route {
 
     return this.store.query('cpt-code', {
       filter: {
-        clinicianId: reservation.clinicianId,
+        clinicianId: reservation.clinician.id,
       }
     });
   }

@@ -19,7 +19,7 @@ export default class WidgetLocationRoute extends Route {
 
     return this.store.query('office', {
       filter: {
-        clinicianId: reservation.clinicianId,
+        clinicianId: reservation.clinician.id,
         cptCodeId: reservation.cptCodeId
       }
     });
